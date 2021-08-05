@@ -1,0 +1,34 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "webpack": "webpack -w",
+    "dev": "webpack -wd",
+    "save": "webpack -wp",
+    "build": "webpack --mode production --config webpack.release.config.js",
+    "fat": "webpack --mode production --config webpack.platform.conf.js",
+    "uat": "webpack --mode production --config webpack.platform.conf.js",
+    "pro": "webpack --mode production --config webpack.platform.conf.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "svgaplayerweb": "^2.3.3",
+    "ts-loader": "^4.5.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "filemanager-webpack-plugin": "^2.0.5",
+    "generate-asset-webpack-plugin": "^0.3.0",
+    "tern": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-parallel-uglify-plugin": "^1.1.0"
+  }
+}

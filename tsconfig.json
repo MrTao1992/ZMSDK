@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,// 给源码里的装饰器声明加上设计类型元数据
+    "experimentalDecorators": true, //实验性启用ES7装饰器支持。
+    "lib": [ "es2015", "dom" ],
+    "noImplicitAny": false, //在表达式和声明上有隐含的'any'类型时报错
+    "removeComments": true, //删除注释
+    "preserveConstEnums": true, //保留const和enum声明
+    "allowUnreachableCode": true, //不报告执行不到的代码错误
+	"declaration":false
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
